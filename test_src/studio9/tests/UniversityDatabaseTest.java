@@ -14,7 +14,7 @@ import org.junit.FixMethodOrder;
 import org.junit.Test;
 import org.junit.runners.MethodSorters;
 
-import studio9.Student;
+import assignment7.Student;
 import studio9.UniversityDatabase;
 
 /**

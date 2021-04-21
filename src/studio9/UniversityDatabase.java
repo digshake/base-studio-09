@@ -1,5 +1,7 @@
 package studio9;
 
+import assignment7.Student;
+
 public class UniversityDatabase {
 	//TODO: Complete this class according to the studio instructions
 

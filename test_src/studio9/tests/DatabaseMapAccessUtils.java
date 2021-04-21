@@ -3,7 +3,7 @@ package studio9.tests;
 import java.lang.reflect.Field;
 import java.util.Map;
 
-import studio9.Student;
+import assignment7.Student;
 import studio9.UniversityDatabase;
 
 /**
