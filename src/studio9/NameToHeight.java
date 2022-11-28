@@ -2,8 +2,8 @@ package studio9;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Scanner;
 
-import support.cse131.ArgsProcessor;
 import support.cse131.NotYetImplementedException;
 
 public class NameToHeight {
@@ -18,7 +18,7 @@ public class NameToHeight {
 	 * contain a specified name.
 	 */
 	public static void main(String[] args) {
-		ArgsProcessor ap = new ArgsProcessor(args);
+		Scanner in = new Scanner(System.in);
 
 		// FIXME
 		throw new NotYetImplementedException();
