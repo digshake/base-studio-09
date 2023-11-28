@@ -38,7 +38,7 @@ public class PolynomialTest {
 
 	@Test
 	public void testEval() {
-		assertEquals(49.0, p2.evaluate(2.0), .01);
+		assertEquals(77.0, p2.evaluate(2.0), .01);
 		assertEquals(0.0,  p0.evaluate(100), .01);
 	}
 
@@ -80,12 +80,12 @@ public class PolynomialTest {
 			
 			for(int j = 0; j < coeffs.length; j++)
 			{
-				result = result + coeffs[j] * Math.pow(x, (double)j);
+				result = result + coeffs[j] * Math.pow(x, (double)coeffs.length - j - 1);
 			}
 			
 			if(p1.evaluate(x) > result + 1 || p1.evaluate(x) < result - 1)
 			{
-				System.out.println("Error evaluating: " + p1.toString() + "This recursive method should be run once for each term in the polynomial. Try passing an iterator to your helper method to track your progress. How do you know when the computation is complete?\nExpected: " + result + "\nActual: " + p1.evaluate(x));
+				System.out.println("Error evaluating: " + p1.toString());
 			}
 			assertEquals(result, p1.evaluate(x), 1);
 		}

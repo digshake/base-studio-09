@@ -13,14 +13,7 @@ public class Polynomial {
 		//FIXME
 	}
 
-	/*
-	 * Returns a String of the polynomial with the proper form:
-	 * 
-	 * Cx^N + Cx^N-1 + ... + Cx + C
-	 */
-	public String toString() {
-		return ""; //FIXME
-	}
+	
 	/**
 	 * 
 	 * @param coeff
@@ -29,6 +22,16 @@ public class Polynomial {
 	public void addTerm(double coeff) {
 		//FIXME
 	}
+	
+	/*
+	 * Returns a String of the polynomial with the proper form:
+	 * 
+	 * Cx^N + Cx^N-1 + ... + Cx + C
+	 */
+	public String toString() {
+		return ""; //FIXME
+	}
+	
 	/**
 	 * 
 	 * @param x
