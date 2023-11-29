@@ -28,8 +28,8 @@ public class PolynomialTest {
 	
 	@Test
 	public void testDeriv() {
-		Polynomial p1Deriv = synthPoly(new double[] { -7,  0, 33});
-		Polynomial p2Deriv = synthPoly(new double[] {  5, -4, 15 });
+		Polynomial p1Deriv = synthPoly(new double[] { 12,  -14, 0});
+		Polynomial p2Deriv = synthPoly(new double[] {  21, 10, -2 });
 
 		assertEquals(p1Deriv, p1.derivative());
 		assertEquals(p2Deriv, p2.derivative());
@@ -55,8 +55,8 @@ public class PolynomialTest {
 			Polynomial p1 = synthPoly(coeffs);
 			Polynomial der = new Polynomial();
 			
-			for (int j=0; j < coeffs.length; ++j) {
-				if (j > 0) der.addTerm(coeffs[j]*j);
+			for (int j=0; j < coeffs.length-1; ++j) {
+				der.addTerm(coeffs[j]*(coeffs.length - j - 1));
 			}
 			if(der.toString().compareTo(p1.derivative().toString()) != 0)
 			{
